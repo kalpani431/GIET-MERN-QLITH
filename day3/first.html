@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        h2{
+            color: aqua;
+            font-size: 50px;
+
+        }
+        /* p{
+            background-color: brown;
+        } */
+    </style>
+    
+</head>
+<body>
+    <!-- there are 4 way we can  
+     1.inline css
+     2.internal css
+     3.external css
+     4.import statement-->
+
+     <!-- inline css -->
+     <h1 style="background-color: yellow;">this is the heading</h1>
+     <h2 >this is the heading 2</h2>
+     <p>style="background-color: chartreuse;"</p>
+
+
+     <!-- selector -->
+      <!--1. simple selector
+          - id selector  (#paragraph)
+          - class name selector  (.heading)
+          - group name selector  ()
+          - universal selector
+           2.combinator selector
+           3.attribute selector
+           4.pseudo class selector
+           5.pseudo element selector -->
+          <div id="box"></div>
+          <P class="paragraph">this is the paragraph</P>
+          <h3>content</h3>
+
+          <b>content</b>
+          <strong>this is strong</strong>
+          <p>this is p tag</p>
+
+
+          <!-- combinator selector
+           1.descendent selector
+           2. direct child selector
+           3.adjacent sibling selector
+           4.general sibling selector -->
+
+           <div class="parent">
+            <p>child one</p>
+            <div class="child">
+            <p>indirect child</p>
+           </div>
+           </div>
+           <p>first sibling</p>
+           <p>second sibling</p>
+           <p>third sibling</p>
+
+           <!-- pseudo class selector
+            1.hover
+            2.active
+            3.focus
+            4.first child
+            5.last child
+            6.nth child -->
+
+            <div class="learn-pseudo"></div>
+            <input type="text"placeholder="name"><br>
+            <input type="text"placeholder="age">
+
+            <ul>
+                <li>first-child</li>
+                <li>second-child</li>
+                <li>third-child</li>
+                <li>fourth-child</li>
+                <li>fiveth-child</li>
+            </ul>
+
+</body>
+</html>
