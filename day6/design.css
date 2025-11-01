@@ -1,0 +1,107 @@
+.container{
+    width: 700px;
+    height: 500px;
+    margin: 40px auto;
+    border:2px solid black ;
+ 
+}
+.item{
+    float: left;
+}
+.item1{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    position: relative;  /*(change from current position)*/  
+     /* position: absolute;    (changes from parent position) */
+    top: 150px;
+    left: 30px;
+
+}
+.item2{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 255, 17);
+
+}
+.item3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(34, 0, 255);
+
+}
+.paragraph{
+    background-color: aqua;
+    position: sticky;
+    bottom: 30;
+    left: 0;
+}
+nav{
+    width: 100vw;
+    height: 70px;
+    box-shadow: 2px 2px 5px black;
+    display: flex;
+    align-items: center;
+}
+.nav-logo{
+    width: 20%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-logo p{
+    color: blue;
+    font-size: 20px;
+}
+.nav-logo p span{
+    color: brown;
+}
+ul{
+    width: 70%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+ul li{
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+ul li:hover {
+    color: orange;
+    cursor: pointer;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn button{
+    padding: 10px 20px;
+    background-color: rgb(40, 153, 40);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.nav-btn button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.move{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 3s;
+}
+.move:hover{
+    transform: translate(400px);
+}
